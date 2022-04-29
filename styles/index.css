@@ -1,0 +1,60 @@
+/* body {
+    background-color: whitesmoke;
+} */
+
+h1,h4{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    animation: header-load 300ms ease-in 300ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+p{
+    font-family: 'Oxygen', sans-serif;
+    animation: header-load 300ms ease-in 600ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+a{
+    animation-name: name-load;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+    animation-delay: 900ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-1000%);
+}
+
+.text-work{
+    color: maroon;
+}
+
+
+
+@keyframes header-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes name-load{
+    0%{
+        transform: translateX(-1000%);
+    }
+
+    90%{
+        transform: translateX(50%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
